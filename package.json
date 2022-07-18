@@ -26,5 +26,8 @@
     "passport-jwt": "*"
   },
   "author": "MrShoichi",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@architect/sandbox": "^5.3.0"
+  }
 }
