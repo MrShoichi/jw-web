@@ -4,8 +4,10 @@
   "description": "JW Web app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index"
+    "test": "NODE_ENV=testing tape test/*-test.js | tap-spec",
+    "start": "node index",
+    "build": "./scripts/build",
+    "lint": "eslint src --ignore-pattern node_modules --fix"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
