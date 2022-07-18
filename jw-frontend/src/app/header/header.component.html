@@ -1,0 +1,30 @@
+<header >
+  <!-- Navbar -->
+  <nav class="navbar  navbar-expand-lg navbar-light bg-white fixed-top mb-5">
+    <div class="container-fluid">
+
+      <div class="collapse navbar-collapse d-flex justify-content-between">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a href="/" class="h3 text-decoration-none nav-link text-warning">Inel</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item"><a [routerLink]="['/']" class="nav-link px-2 link-secondary">Главная</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-3 link-dark">О компании</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-3 link-dark">Услуги</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-3 link-dark">Товары</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-3 link-dark">Контакты</a></li>
+          <a *ngIf="authService.isLoggedIn()" type="button" class="fas fa-user-circle ml-2 text-warning fa-3x" [routerLink]="['/cabinet']"></a>
+          <a *ngIf="!authService.isLoggedIn()" type="button" class="btn btn-outline-warning mx-3" [routerLink]="['/auth']">Войти</a>
+          <a *ngIf="!authService.isLoggedIn()" type="button" class="btn btn-warning" [routerLink]="['/reg']">Зарегестрироваться</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="text-center " style="padding: 37px">
+
+  </div>
+  <!-- Navbar -->
+</header>

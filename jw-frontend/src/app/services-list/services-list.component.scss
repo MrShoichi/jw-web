@@ -1,0 +1,10 @@
+.appear-text {
+  transition: all 0.8s;
+  opacity: 0;
+}
+
+.appear-text.inview {
+  opacity: 1;
+  transition-delay: 0.3s;
+
+}

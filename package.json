@@ -1,0 +1,28 @@
+{
+  "name": "webjw",
+  "version": "1.0.0",
+  "description": "JW Web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "bootstrap": "^5.2.0-beta1",
+    "cors": "*",
+    "express": "*",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "*",
+    "mdb-ui-kit": "^4.3.0",
+    "mongoose": "*",
+    "netlify-lambda": "^2.0.15",
+    "npm": "*",
+    "passport": "*",
+    "passport-jwt": "*"
+  },
+  "author": "MrShoichi",
+  "license": "ISC"
+}
