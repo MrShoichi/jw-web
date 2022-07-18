@@ -6,7 +6,7 @@
   "scripts": {
     "test": "NODE_ENV=testing tape test/*-test.js | tap-spec",
     "start": "node index",
-    "build": "./scripts/build"
+    "build": "./public"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
